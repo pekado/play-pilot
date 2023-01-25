@@ -60,7 +60,7 @@
 	on:focus={() => (isOpen = true)}
 	on:blur={() => (isOpen = false)}
 />
-<div class:hide={isOpen}>
+<div>
 	{#each filteredAreas as urbanArea}
 		<CityButton city={urbanArea} bind:urbanAreaScore />
 	{/each}
@@ -83,9 +83,5 @@
 		height: 40px;
 		outline: none;
 		font-size: 40px;
-	}
-
-	.hide {
-		visibility: none;
 	}
 </style>
